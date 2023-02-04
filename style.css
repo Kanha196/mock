@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 2fr 0.6fr;
+    grid-template-areas: "header header"
+     "sec1 form"
+     "footer footer";
+     background-image:url(../baee.jpg);
+     background-position: cover;
+     background-position: center;
+}
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3));
+    color: white;
+}
+.sec1{
+    grid-area:sec1;
+    text-align: center;
+    padding-top: 100px ;
+    color: white;
+    font-size: 40px;
+    box-sizing: border-box;
+}
+div{
+   margin-left: 40px;
+}
+a{
+    text-decoration: none;
+    padding: 10px 30px;
+    color: white;
+    margin-right10px: ;
+}
+.form{
+    grid-area: form;
+    box-sizing: border-box;
+    color: black;
+}
+input{
+    margin: 10px  ;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+h1{
+    
+    margin: 10px 20px ;
+}
+p{
+    margin-top: 5px;
+}
+table{
+ margin: 50px 200px;
+ padding: 40px;
+ background-color: white;
+}
+footer{
+    background-color: aliceblue;
+    grid-area: footer;
+    padding: 20px 100px ;
+}
+button{
+    text-align: center;
+    background-color: pink;
+    padding: 10px 40px;
+    border: 2px solid pink;
+}
